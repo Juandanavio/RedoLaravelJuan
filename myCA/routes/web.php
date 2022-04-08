@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\PageController;
+use App\Http\Controllers\User\FestivalController as UserFestivalController;
 
 
 /*
@@ -25,3 +27,9 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get('admin/home', [App\Http\Controllers\Admin\HomeController::class, 'index'])->name('admin.home');
 Route::get('user/home', [App\Http\Controllers\User\HomeController::class, 'index'])->name('user.home');
+
+Route::get('/', [PageController::class, 'welcome'])->name('welcome');
+Route::get('/about', [PageController::class, 'about'])->name('about');
+
+Route::get('/user/festivals', [UserFestivalController::class, 'index'])->name('user.festivals.index');
+Route::get('/user/festivals/{id}', [UserFestivalController::class, 'show'])->name('user.festivals.show');
