@@ -23,7 +23,6 @@ class CreateFestivalsTable extends Migration
             $table->string('contact_name');
             $table->string('contact_email');
             $table->string('contact_phone');
-            $table->string('image_location');
             $table->timestamps();
         });
     }
