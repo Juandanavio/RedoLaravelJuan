@@ -7,45 +7,45 @@
         <div class="col-md-8 col-md-offset-2">
             <div class="card">
                 <div class="card-header">
-                    Festival: {{$festival->title}}</div>
+                    Film: {{$film->title}}</div>
                 <div class="card-body">
-                    <table id="table-festivals" class="table table-hover">
+                    <table id="table-films" class="table table-hover">
                     <tbody>
                   <tr>
                     <td>Title</td>
-                    <td>{{ $festival->title }}</td>
+                    <td>{{ $film->title }}</td>
                   </tr>
                   <tr>
                     <td>Description</td>
-                    <td>{{ $festival->description }}</td>
+                    <td>{{ $film->description }}</td>
                   </tr>
                   <tr>
                     <td>Location</td>
-                    <td>{{ $festival->location }}</td>
+                    <td>{{ $film->location }}</td>
                   </tr>
                   <tr>
                     <td>Start Date</td>
-                    <td>{{ $festival->start_date }}</td>
+                    <td>{{ $film->start_date }}</td>
                   </tr>
                   <tr>
                     <td>End Date</td>
-                    <td>{{ $festival->end_date }}</td>
+                    <td>{{ $film->end_date }}</td>
                   </tr>
                   <tr>
                     <td>Contact Name</td>
-                    <td>{{ $festival->contact_name }}</td>
+                    <td>{{ $film->contact_name }}</td>
                   </tr>
                   <tr>
                     <td>Contact Email</td>
-                    <td>{{ $festival->contact_email }}</td>
+                    <td>{{ $film->contact_email }}</td>
                   </tr>
                   <tr>
                     <td>Contact Phone</td>
-                    <td>{{ $festival->contact_phone }}</td>
+                    <td>{{ $film->contact_phone }}</td>
                   </tr>
                 </tbody>
                     </table>
-                    <a href="{{route('user.festivals.index')}}" class="btn btn-default">Back</a>
+                    <a href="{{route('user.films.index')}}" class="btn btn-default">Back</a>
                 </div>
             </div>
         </div>

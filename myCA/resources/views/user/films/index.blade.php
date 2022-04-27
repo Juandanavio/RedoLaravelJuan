@@ -7,32 +7,30 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    Festivals</div>
+                    Films</div>
                 <div class="card-body">
-                    @if(count($festivals)=== 0)
-                        <p>there are no festivals</p>
+                    @if(count($films)=== 0)
+                        <p>there are no films</p>
                     @else
-                    <table id="table-festivals" class="table table-hover">
+                    <table id="table-films" class="table table-hover">
                         <thead>
                             <th>Title</th>
                             <th>Desciption</th>
                             <th>Location</th>
                             <th>Start Date</th>
-                            <th>End Date</th>
 
                         </thead>
                         <tbody>
-                            @foreach ($festivals as $festival)
-                                <tr data-id="{{ $festival->id}}">
-                                <td>{{$festival->title}}</td>
-                                <td>{{$festival->description}}</td>
-                                <td>{{$festival->location}}</td>
-                                <td>{{$festival->start_date}}</td>
-                                <td>{{$festival->end_date}}</td>
+                            @foreach ($films as $film)
+                                <tr data-id="{{ $film->id}}">
+                                <td>{{$film->title}}</td>
+                                <td>{{$film->description}}</td>
+                                <td>{{$film->location}}</td>
+                                <td>{{$film->start_date}}</td>
 
 
                                 <td>
-                                    <a href="{{route('user.festivals.show',$festival->id)}}" class="btn btn-primary">View</a>
+                                    <a href="{{route('user.films.show',$film->id)}}" class="btn btn-primary">View</a>
                                 </td>
                             </tr>
                             @endforeach

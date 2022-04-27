@@ -4,9 +4,9 @@ namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Festival;
+use App\Models\Film;
 
-class FestivalController extends Controller
+class FilmController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +15,9 @@ class FestivalController extends Controller
      */
     public function index()
     {
-        $festivals = Festival::all();
-        return view('user.festivals.index', [
-            'festivals' => $festivals
+        $films = Film::all();
+        return view('user.films.index', [
+            'films' => $films
         ]);
     }
 
@@ -50,10 +50,10 @@ class FestivalController extends Controller
      */
     public function show($id)
     {
-        $festival = Festival::findOrFail($id);
+        $film = Film::findOrFail($id);
 
-        return view('user.festivals.show',[
-            'festival' => $festival
+        return view('user.films.show',[
+            'film' => $film
         ]);
     }
 

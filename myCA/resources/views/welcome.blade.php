@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    Welcome to Larafest
+                    Welcome to Cinema Juanito
 
                     Read More <a href="{{ route('about')  }}"> about us </a>
                 </div>
