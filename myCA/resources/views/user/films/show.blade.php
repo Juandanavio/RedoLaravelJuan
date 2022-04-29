@@ -27,22 +27,6 @@
                     <td>Start Date</td>
                     <td>{{ $film->start_date }}</td>
                   </tr>
-                  <tr>
-                    <td>End Date</td>
-                    <td>{{ $film->end_date }}</td>
-                  </tr>
-                  <tr>
-                    <td>Contact Name</td>
-                    <td>{{ $film->contact_name }}</td>
-                  </tr>
-                  <tr>
-                    <td>Contact Email</td>
-                    <td>{{ $film->contact_email }}</td>
-                  </tr>
-                  <tr>
-                    <td>Contact Phone</td>
-                    <td>{{ $film->contact_phone }}</td>
-                  </tr>
                 </tbody>
                     </table>
                     <a href="{{route('user.films.index')}}" class="btn btn-default">Back</a>
